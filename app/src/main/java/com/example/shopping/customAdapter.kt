@@ -1,7 +1,10 @@
 package com.example.shopping
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.shopping.databinding.ItemHomeProductBinding
 
@@ -19,11 +22,20 @@ class customAdapter(private val product: List<product>) : RecyclerView.Adapter<c
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentProduct = product[position]
-        holder.binding.imageRv.setImageResource(currentProduct.pic)
-        holder.binding.textRv1.text = currentProduct.name.toString()
-        holder.binding.textRv2.text = currentProduct.name.toString()
-        holder.binding.textRv3.text = currentProduct.name.toString()
+        holder.binding.itemImage.setImageResource(currentProduct.pic)
+        holder.binding.text1.text = currentProduct.name
+        holder.binding.text2.text = currentProduct.description
+        holder.binding.text3.text = currentProduct.price.toString()
+
+
+
+
+
+
+
+
+
+    }
     }
 
 
-}

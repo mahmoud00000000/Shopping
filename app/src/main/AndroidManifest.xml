@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Shopping"
         tools:targetApi="31">
         <activity
+            android:name=".ContactUs"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".YourData"
+            android:exported="false" />
+        <activity
+            android:name=".Nav_header"
+            android:exported="false" />
+        <activity
             android:name=".ProductDetails"
             android:exported="false" />
         <activity
