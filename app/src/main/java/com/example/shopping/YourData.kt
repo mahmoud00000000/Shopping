@@ -1,5 +1,6 @@
 package com.example.shopping
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -19,6 +20,10 @@ class YourData : AppCompatActivity() {
         binding.orderBtn.setOnClickListener {
             Toast.makeText(this, "تم الحجز بنجاح", Toast.LENGTH_SHORT).show()
         }
+
+        window.statusBarColor = Color.parseColor("#FFFFFF")
+
+        window.decorView.systemUiVisibility = 0
 
     }
 }

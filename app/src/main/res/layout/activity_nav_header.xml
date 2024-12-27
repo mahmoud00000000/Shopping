@@ -5,7 +5,7 @@
     android:layout_height="160dp"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#BDBBBB">
+    android:background="#7E99A3">
 
     <TextView
         android:id="@+id/nav_header_title"

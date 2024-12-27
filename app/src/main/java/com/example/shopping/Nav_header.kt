@@ -1,6 +1,7 @@
 package com.example.shopping
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,7 +17,9 @@ class Nav_header : AppCompatActivity() {
         binding = ActivityNavHeaderBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        window.statusBarColor = Color.parseColor("#FFFFFF")
 
+        window.decorView.systemUiVisibility = 0
 
     }
 }

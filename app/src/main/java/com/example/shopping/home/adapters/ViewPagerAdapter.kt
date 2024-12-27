@@ -1,4 +1,4 @@
-package com.example.shopping
+package com.example.shopping.home.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -26,6 +26,9 @@ class ViewPagerAdapter(private val images: List<Int>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(images[position])
+        holder.itemView.setOnClickListener {
+
+        }
     }
 
     override fun getItemCount() = images.size

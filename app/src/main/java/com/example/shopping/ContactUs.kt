@@ -1,12 +1,11 @@
-package com.example.shopping
+package com.example.shopping.home
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.shopping.databinding.ActivityContactUsBinding
+
 
 class ContactUs : AppCompatActivity() {
 
@@ -20,6 +19,10 @@ class ContactUs : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        window.statusBarColor = Color.parseColor("#FFFFFF")
+
+        window.decorView.systemUiVisibility = 0
 
     }
 }
